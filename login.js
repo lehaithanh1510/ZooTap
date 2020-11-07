@@ -45,5 +45,5 @@ document.querySelector(".user").addEventListener("submit", (e) => {
 
     e.preventDefault()
     console.log("1")
-    window.location.href = "consumer.html"
+    window.location.href = "index.html"
 })
