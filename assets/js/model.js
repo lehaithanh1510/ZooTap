@@ -52,9 +52,9 @@ model.renderHealthStatus = (foundAnimalID) => {
 
         let statusHtml = `<div id="status-#id#">
             <p style=" font-weight: 400;">#Time#</p>
-            <ul class="list-group">
-                <li class="list-group-item">Details: #detail# </li>
-                <li class="list-group-item">Doctor: #doctor#</li>
+            <ul class="list-group" style="border:none">
+                <li class="list-group-item"  style="border:none; width : 90vw">Details: #detail# </li>
+                <li class="list-group-item"  style="border:none; width : 90vw">Doctor: #doctor#</li>
             </ul>
         </div>`
         let newSttHtml;
