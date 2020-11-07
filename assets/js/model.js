@@ -25,6 +25,7 @@ model.getAnimalDetails = async () => {
     console.log(model.animal)
     animalID = "C111902778";
     document.getElementById("farm").innerHTML = model.animal[0].farm
+    console.log(model.animal[0].farm)
     document.getElementById("animal_Host").innerHTML = model.animal[0].animal_Host
     document.getElementById("phone").innerHTML = model.animal[0].phone
     document.getElementById("weight").innerHTML = model.animal[0].weight
@@ -50,7 +51,7 @@ model.getHealthStatus();
 model.renderHealthStatus = (foundAnimalID) => {
     for (let i = 1; i <= foundAnimalID.checks.length; i++){
 
-        let statusHtml = `<div id="status-#id#">
+        let statusHtml = `<div id="status-#id#" class="w-100">
             <p style=" font-weight: 400;">#Time#</p>
             <ul class="list-group" style="border:none">
                 <li class="list-group-item"  style="border:none; width : 90vw">Details: #detail# </li>
