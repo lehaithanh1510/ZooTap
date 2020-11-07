@@ -25,6 +25,12 @@ model.getAnimalDetails = async () => {
     console.log(model.animal)
     animalID = "C111902778";
     document.getElementById("farm").innerHTML = model.animal[0].farm
+    document.getElementById("animal_Host").innerHTML = model.animal[0].animal_Host
+    document.getElementById("phone").innerHTML = model.animal[0].phone
+    document.getElementById("weight").innerHTML = model.animal[0].weight
+    document.getElementById("age").innerHTML = model.animal[0].age
+    document.getElementById("gender").innerHTML = model.animal[0].gender
+    document.getElementById("special_condition").innerHTML = model.animal[0].special_condition
 }
 
 
